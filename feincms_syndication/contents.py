@@ -65,7 +65,7 @@ class FeedContent(models.Model):
         html = render_to_string(
             [
                 'content/feincms_syndication/%s.html' % self.type,
-                'content/feincms_syndication/default.html' % self.type,
+                'content/feincms_syndication/default.html',
             ],
             {
                 'content': self,
